@@ -18,3 +18,41 @@ def main():
 
 if __name__ == '__main__':
     main()
+      
+      
+ 2) You are given an integer T (number of test cases). You are given array A and an integer B for each test case. You have to tell whether B is present in array A or not.
+
+contraints:
+   
+1 <= T <= 10
+1 <= |A| <= 105
+1 <= A[i], B <= 109
+
+example input 1:
+ 1 
+ 5 4 1 5 9 1
+ 5
+      
+      def main():
+    # YOUR CODE GOES HERE
+    # Please take input and print output to standard input/output (stdin/stdout)
+    # E.g. 'input()/raw_input()' for input & 'print' for output
+
+    testcases = int(input())
+    for i in range(testcases):
+       arr = list(map(int,input().split()))
+
+       val = int(input())
+       output = 0
+       if arr:
+           for j in arr:
+               if(val==j):
+                   output = 1
+            
+           print(output)
+       else:
+           print(output)
+
+
+if __name__ == '__main__':
+    main()
